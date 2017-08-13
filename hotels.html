@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Отели</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="page-header">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="index.html">Информацияо</a></li>
+      <li class="main-nav__item"><a href="">Фото и видео</a></li>
+      <li class="main-nav__item"><a href="">Карта штата</a></li>
+      <li class="main-nav__item">Гостиницы</li>
+    </ul>
+
+    <a href=index.html" class="page-header__logo"><img src="" width="" height="" alt="логотип"/></a>
+  </nav>
+
+</header>
+
+<main>
+
+  <form method="post">
+    <fieldset class="form-hotels__infrastructure" style="border: none">
+
+      <legend>Инфраструктура:</legend>
+
+      <p><label for="pool">
+        <input type="checkbox" id="pool" name="infrastructure" placeholder="Бассейн" checked>
+
+        Бассейн</label></p>
+
+      <p><label for="parking">
+        <input type="checkbox" id="parking" name="infrastructure" placeholder="Парковка">
+        Парковка
+      </label></p>
+
+      <p><label for="Wi-Fi">
+        <input type="checkbox" id="Wi-Fi" name="infrastructure" placeholder="Вай-Фай">
+        Wi-Fi
+      </label></p>
+
+    </fieldset>
+
+    <fieldset class="form-hotels__type" style="border: none">
+
+      <legend>Тип жилья:</legend>
+
+      <p><label for="hotel">
+        <input type="checkbox" id="hotel" name="Type of accommodation" placeholder="hotel" checked>
+
+        Гостиница</label></p>
+
+      <p><label for="motel">
+        <input type="checkbox" id="motel" name="Type of accommodation" placeholder="Мотель" checked>
+        Мотель
+      </label></p>
+
+      <p><label for="apartments">
+        <input type="checkbox" id="apartments" name="Type of accommodation" placeholder="apartments" checked>
+        Апартамены
+      </label></p>
+
+    </fieldset>
+
+    <fieldset class="form-hotels__price" style="border: none">
+
+      <legend>Стоимость в сутки(Р):</legend>
+
+      <label for="price"></label>
+      от 0 <input type="range" id="price" name="price" min="0" max="3000" step="50" value="2550"> до 3000
+
+    </fieldset>
+    <div class="form-hotels__button">
+      <input type="submit" value="Показать">
+    </div>
+  </form>
+
+  <table class="table-hotels">
+    <tr class="table-hotels__caption">
+      <th><h1>Найдено:3</h1></th>
+      <th>Сотрировка:</th>
+      <th>По цене</th>
+      <th>По типу</th>
+      <th>По рейтингу</th>
+      <th>
+        <button><img src="" alt="стрелочки"/></button>
+      </th>
+    </tr>
+    <tr class="table-hotels__row">
+      <td><img src="" alt="Гостиница"/></td>
+      <td><h1>Amara Resort & Spa</h1>
+        <p>Гостиница<a href="">
+          <img src="" alt="Подробнее">
+        </a></p>
+        <p>От 4000 р<a href="">
+          <img src="" alt="Забронировать">
+        </a></p></td>
+      <td><p><img src="" alt="звездочки"></p>
+        <p>Рейтинг:8.5</p></td>
+
+    </tr>
+    <tr class="table-hotels__row">
+      <td><img src="" alt="Мотель"/></td>
+      <td><h1>Desert Quail Inn</h1>
+        <p>Мотель<a href="">
+          <img src="" alt="Подробнее">
+        </a></p>
+        <p>От 3000 р<a href="">
+          <img src="" alt="Забронировать">
+        </a></p></td>
+      <td><p><img src="" alt="звездочки"></p>
+        <p>Рейтинг:8.9</p></td>
+
+    </tr>
+    <tr class="table-hotels__row">
+      <td><img src="" alt="Апартаменты"/></td>
+      <td><h1>Villas At Poco Diablo</h1>
+        <p>Апартаменты<a href="">
+          <img src="" alt="Подробнее">
+        </a></p>
+        <p>От 2000 р<a href="">
+          <img src="" alt="Забронировать">
+        </a></p></td>
+      <td><p><img src="" alt="звездочки"></p>
+        <p>Рейтинг:9.2</p></td>
+    </tr>
+  </table>
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__hashtag">
+    <h2 class="page-footer__hashtag--color">
+      #VISITSEDONA
+    </h2>
+  </div>
+
+  <p class="page-footer__social">
+    <span class="social-links">
+      <a class="social-link social-link--twitter" href=""></a>
+      <a class="social-link social-link--facebook" href=""></a>
+      <a class="social-link social-link--youtube" href=""></a>
+    </span>
+  </p>
+
+  <p class="page-footer__copyright">
+    Разработано
+    <img class="page-footer__image" src="" alt="html academy">
+  </p>
+
+</footer>
+
+</body>
+</html>
