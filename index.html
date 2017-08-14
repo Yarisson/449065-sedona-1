@@ -28,7 +28,7 @@
   </div>
 
   <section class="main-head">
-    <h1 class="main-head__h1">Седона - небольшой
+    <h1 class="main-head__caption">Седона - небольшой
       городок в Аризоне,
       заслуживающий большего!</h1>
     <p class="main-head__preview">
@@ -37,133 +37,151 @@
     </p>
   </section>
 
+
   <section class="main-reason">
-    <div class="main-reason-decoration__color">
-      <h2>Настоящий городок</h2>
-      <p class="main-reason__roster">- №1 -</p>
-      <p>Седона - не аттракцион
-        для туристов там течет
-        своя жизнь</p>
-    </div>
-    <p class="main-reason__town">
-      <img src="" width="" height="" alt="фото города">
-    </p>
-
-    <div class="main-reason__tourist">
-
-      <span class="main-reason__icon main-reason__tourist--house"></span>
-      <h3>Жилье</h3>
-      <p>
-        Рекомендуем пожить в
-        настоящем мотеле,
-        все как в кино!
-      </p>
-
-    </div>
-
-    <div class="main-reason__tourist">
-      <span class="main-reason__icon main-reason__tourist--food"></span>
-      <h3>Еда</h3>
-      <p>
-        Всегда заказывайте
-        фирменный бургер,
-        вы не разочаруетесь!
-      </p>
-    </div>
-
-    <div class="main-reason__tourist">
-      <span class="main-reason__icon main-reason__tourist--souvenirs"></span>
-      <h3>Сувениры</h3>
-      <p>
-        Не только китайского,
-        но и местного
-        производства!
-      </p>
-
-    </div>
-    <section class="main-reason-decoration">
-      <p class="main-reason__Bridge">
-        <img src="" width="" height="" alt="мост дьявола">
-      </p>
+    <div class="container-town">
       <div class="main-reason-decoration__color">
-        <h2>Там есть мост дьявола</h2>
-        <p class="main-reason__roster">- №2 -</p>
-        <p>Да, по нему можно
-          пройти! Если конечно
-          вы осмелитесь</p>
+        <h2>Настоящий городок</h2>
+        <p class="main-reason__roster">- №1 -</p>
+        <p>Седона - не аттракцион
+          для туристов там течет
+          своя жизнь</p>
+      </div>
+
+      <div class="main-reason__town">
+        <img src="" width="" height="" alt="фото города">
+      </div>
+    </div>
+
+    <div class="tourist-container">
+      <div class="main-reason__tourist">
+
+        <div class="main-reason__icon main-reason__tourist--house">
+          <img src="" alt="жилье"/>
+        </div>
+        <h3>Жилье</h3>
+        <p>
+          Рекомендуем пожить в
+          настоящем мотеле,
+          все как в кино!
+        </p>
+
+      </div>
+
+      <div class="main-reason__tourist">
+        <div class="main-reason__icon main-reason__tourist--food">
+          <img src="" alt="еда"/>
+        </div>
+        <h3>Еда</h3>
+        <p>
+          Всегда заказывайте
+          фирменный бургер,
+          вы не разочаруетесь!
+        </p>
+      </div>
+
+      <div class="main-reason__tourist">
+        <div class="main-reason__icon main-reason__tourist--souvenirs">
+          <img src="" alt="сувенир"/>
+        </div>
+        <h3>Сувениры</h3>
+        <p>
+          Не только китайского,
+          но и местного
+          производства!
+        </p>
+
+      </div>
+    </div>
+
+    <div class="container-bridge">
+      <section class="main-reason-decoration">
+        <div class="main-reason__bridge">
+          <img src="" width="" height="" alt="мост дьявола">
+        </div>
+        <div class="main-reason-decoration__color">
+          <h2>Там есть мост дьявола</h2>
+          <p class="main-reason__roster">- №2 -</p>
+          <p>Да, по нему можно
+            пройти! Если конечно
+            вы осмелитесь</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-decoration">
+      <section class="main-reason-decoration">
+        <h2>Небольшая площадь</h2>
+        <p class="main-reason__roster">- №3 -</p>
+        <p>Все достопримечательности
+          находятся очень близко</p>
+      </section>
+
+      <section class="main-reason-decoration">
+        <h2>Красивая дорога</h2>
+        <p class="main-reason__roster">- №4 -</p>
+        <p>Ехать в Седону из
+          Лас-Вегаса совсем
+          не скучно!</p>
+      </section>
+
+      <section class="main-reason-decoration">
+        <h2>Мало туристов</h2>
+        <p class="main-reason__roster">- №5 -</p>
+        <p>Большинство едет в
+          Гранд Каньон и
+          толпится там</p>
+      </section>
+    </div>
+
+  </section>
+
+  <div class="hotel-interest">
+    <h4>Заинтересовались?</h4>
+    <p>Укажите предполагаемые даты поездки,
+      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  </div>
+
+  <div class="map">
+    <section class="hotel-search">
+      <h5 class="hotel-search__title">Поиск гостиницы в Седоне</h5>
+      <div class="hotel-search__body">
+        <div class="hotel-search__checkin"><label for="check-in-date">Дата заезда:</label>
+          <input type="date" id="check-in-date" name="check-in-date">
+          <span class="hotel-search--calendar"></span>
+        </div>
+
+        <div class="hotel-search__checkout"><label for="check-out-date">Дата выезда:</label>
+          <input type="date" id="check-out-date" name="check-out-date">
+          <span class="hotel-search--calendar"></span>
+        </div>
+
+        <div class="hotel-search__guest">
+          <label for="adult">Взрослые:</label>
+          <input type="number" min="1" max="5" id="adult" name="adult">
+
+          <label for="children">Дети:</label>
+          <input type="number" min="0" max="5" id="children" name="children">
+        </div>
+
+        <button class="hotel-search__button">Найти</button>
       </div>
     </section>
-
-    <section class="main-reason-decoration">
-      <h2>Небольшая площадь</h2>
-      <p class="main-reason__roster">- №3 -</p>
-      <p>Все достопримечательности
-        находятся очень близко</p>
-    </section>
-
-    <section class="main-reason-decoration">
-      <h2>Красивая дорога</h2>
-      <p class="main-reason__roster">- №4 -</p>
-      <p>Ехать в Седону из
-        Лас-Вегаса совсем
-        не скучно!</p>
-    </section>
-
-    <section class="main-reason-decoration">
-      <h2>Мало туристов</h2>
-      <p class="main-reason__roster">- №5 -</p>
-      <p>Большинство едет в
-        Гранд Каньон и
-        толпится там</p>
-    </section>
-
-
-  </section>
-
-  <h4>Заинтересовались?</h4>
-  <p>Укажите предполагаемые даты поездки,
-    и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-  <section class="hotel-search">
-    <h5 class="hotel-search__title">Поиск гостиницы в Седоне</h5>
-    <div class="hotel-search__body">
-      <p class="hotel-search__checkin"><label for="check-in-date">Дата заезда:</label>
-        <input type="date" id="check-in-date" name="check-in-date">
-        <span class="hotel-search--calendar"></span>
-      </p>
-
-      <p class="hotel-search__checkout"><label for="check-out-date">Дата выезда:</label>
-        <input type="date" id="check-out-date" name="check-out-date">
-        <span class="hotel-search--calendar"></span>
-      </p>
-
-      <p class="hotel-search__guest">
-        <label for="adult">Взрослые:</label>
-        <input type="number" min="1" max="5" id="adult" name="adult">
-
-        <label for="children">Дети:</label>
-        <input type="number" min="0" max="5" id="children" name="children">
-      </p>
-
-      <a href="hotels.html">
-        <img src="" alt="Найти">
-      </a>
-    </div>
-  </section>
+  </div>
 
 </main>
 <footer class="page-footer">
   <h6 class="page-footer__hashtag">#VISITSEDONA</h6>
-  <span class="social-links">
-      <a class="social-links--twitter" href=""></a>
-      <a class="social-links--facebook" href=""></a>
-      <a class="social-links--youtube" href=""></a>
-    </span>
+  <section class="social-links">
+    <a class="social-links--twitter" href=""></a>
+    <a class="social-links--facebook" href=""></a>
+    <a class="social-links--youtube" href=""></a>
+  </section>
 
-  <p class="page-footer__copyright">
+  <div class="page-footer__copyright">
     WEBSITE BY
     <img class="page-footer__image" src="" alt="html academy">
-  </p>
+  </div>
 </footer>
 </body>
 </html>
