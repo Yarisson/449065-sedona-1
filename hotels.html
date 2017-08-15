@@ -74,7 +74,7 @@
 
       <label>Стоимость в сутки(Р)</label>
 
-      <input value="от 0" name="start_price"> <input value="до 3000" name="end_price">
+      <input type="text" value="от 0" name="start_price"> <input type="text" value="до 3000" name="end_price">
 
       <div class="form-hotels__range">
 
@@ -89,19 +89,20 @@
 
   <section class="hotels-find">
     <div class="hotels-find__found">
-      <h1>Найдено:</h1>
+      <h1 class="hotels-caption__main">Найдено:</h1>
     </div>
 
     <div class="hotels-sorting">
-      <p>Сортировка:</p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По рейтингу</p>
+      <div class="hotels-sorting__sorting">Сортировка:</div>
+      <div class="hotels-sorting__price">По цене</div>
+      <div class="hotels-sorting__type">По типу</div>
+      <div class="hotels-sorting__rating">По рейтингу</div>
     </div>
 
-    <div>
-      <img src="" alt="стрелочки"/>
-    </div>
+    <img src="" alt="стрелочка_вверх"/>
+
+    <img src="" alt="стрелочка_вниз"/>
+
 
   </section>
 
@@ -112,7 +113,7 @@
     </div>
 
     <div class="hotel-amara__booking">
-      <h1>Amara Resort & Spa</h1>
+      <h2 class="hotels-caption__second">Amara Resort & Spa</h2>
       <p>Гостиница</p>
       <p>От 4000 р</p>
       <button class="hotels-button__more">Подробнее</button>
@@ -134,7 +135,7 @@
     </div>
 
     <div class="motel-desert__booking">
-      <h1>Desert Quail Inn</h1>
+      <h2 class="hotels-caption__second">Desert Quail Inn</h2>
       <p>Мотель</p>
       <p>От 3000 р</p>
       <button class="hotels-button__more">Подробнее</button>
@@ -156,7 +157,7 @@
     </div>
 
     <div class="apartments-villas__booking">
-      <h1>Villas At Poco Diablo</h1>
+      <h2 class="hotels-caption__second">Villas At Poco Diablo</h2>
       <p>Апартаменты</p>
       <p>От 2000 р</p>
       <button class="hotels-button__more">Подробнее</button>
