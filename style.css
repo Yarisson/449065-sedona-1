@@ -1,0 +1,47 @@
+body {
+
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.main-head__caption {
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reason-caption__second {
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hotels-caption__main {
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotels-caption__second {
+  font-size: 21px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+}
+
+
