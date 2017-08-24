@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Отели</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" type="text/css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet">
 
 </head>
@@ -15,7 +18,7 @@
       <li class="main-nav__item"><a href="">Информация</a></li>
       <li class="main-nav__item"><a href="">Фото и видео</a></li>
       <li class="main-nav__item"><a href="">Карта штата</a></li>
-      <li class="main-nav__item">Гостиницы</li>
+      <li class="main-nav__item main-nav__current">Гостиницы</li>
     </ul>
 
     <a href="index.html" class="page-header__logo"><img src="" width="" height="" alt="логотип"/></a>
@@ -25,7 +28,7 @@
 
 <main class="container main-hotels">
 
-  <form method="post">
+  <form class="form-background" method="get">
     <fieldset class="form-hotels__infrastructure" style="border: none">
 
       <legend>Инфраструктура:</legend>
@@ -74,7 +77,7 @@
 
       <label>Стоимость в сутки(Р)</label>
 
-      <input type="text" value="от 0" name="start_price"> <input type="text" value="до 3000" name="end_price">
+      <input class="input-price" type="text" value="от 0" name="start_price"> <input class="input-price" type="text" value="до 3000" name="end_price">
 
       <div class="form-hotels__range">
 
