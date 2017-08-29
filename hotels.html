@@ -12,23 +12,28 @@
 </head>
 <body>
 
-<header class="page-header">
+<header class="page-header container">
   <nav class="main-nav">
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="">Информация</a></li>
-      <li class="main-nav__item"><a href="">Фото и видео</a></li>
-      <li class="main-nav__item"><a href="">Карта штата</a></li>
-      <li class="main-nav__item main-nav__current">Гостиницы</li>
+    <ul class="main-nav__list_left">
+      <li class="main-nav__item main-nav_item_left"><a href="">Информация</a></li>
+      <li class="main-nav__item main-nav_item_left"><a href="">Фото и видео</a></li>
     </ul>
 
-    <a href="index.html" class="page-header__logo"><img src="img/svg/logo_header.svg" width="138" height="70" alt="логотип"/></a>
+    <a href="" class="page-header__logo"><img src="img/svg/logo_header.svg" width="" height="" alt="логотип"/></a>
+
+    <ul class="main-nav__list_right">
+      <li class="main-nav__item main-nav_item_right"><a href="">Карта штата</a></li>
+      <li class="main-nav__item main-nav_item_right main-nav__current"><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+
   </nav>
 
 </header>
 
+
 <main class="container main-hotels">
 
-  <form class="form-background" method="get">
+  <form class="form-background container form-container" method="get">
     <fieldset class="form-hotels__infrastructure" style="border: none">
 
       <legend>Инфраструктура:</legend>
@@ -77,7 +82,8 @@
 
       <label>Стоимость в сутки(Р)</label>
 
-      <input class="input-price" type="text" value="от 0" name="start_price"> <input class="input-price" type="text" value="до 3000" name="end_price">
+      <input class="input-price" type="text" value="от 0" name="start_price"> <input class="input-price" type="text"
+                                                                                     value="до 3000" name="end_price">
 
       <div class="form-hotels__range">
 
@@ -85,31 +91,29 @@
       <button class="form-hotels__button">Показать</button>
 
     </fieldset>
-    <div class="form-hotels__button">
-      <input type="submit" value="Показать">
-    </div>
+
   </form>
 
-  <section class="hotels-find">
+  <section class="hotels-find container">
+    <div class="hotels-list">
     <div class="hotels-find__found">
       <h1 class="hotels-caption__main">Найдено:</h1>
     </div>
 
-    <div class="hotels-sorting">
-      <div class="hotels-sorting__sorting">Сортировка:</div>
-      <div class="hotels-sorting__price">По цене</div>
-      <div class="hotels-sorting__type">По типу</div>
-      <div class="hotels-sorting__rating">По рейтингу</div>
-    </div>
+
+      <div class="hotels-sorting hotels-sorting__sorting">Сортировка:</div>
+      <div class="hotels-sorting hotels-sorting__price">По цене</div>
+      <div class="hotels-sorting hotels-sorting__type">По типу</div>
+      <div class="hotels-sorting hotels-sorting__rating">По рейтингу</div>
 
     <img src="" alt="стрелочка_вверх"/>
 
     <img src="" alt="стрелочка_вниз"/>
 
-
+    </div>
   </section>
 
-  <section class="hotel-amara">
+  <section class="hotel-amara container">
 
     <div class="hotel-amara__picture">
       <img src="img/jpg/amara768.jpg" width="135" height="90" alt="отель Amara"/>
@@ -131,7 +135,7 @@
 
   </section>
 
-  <section class="motel-desert">
+  <section class="motel-desert container">
 
     <div class="motel-desert__picture">
       <img src="img/jpg/desert768.jpg" width="135" height="90" alt="мотель Desert"/>
@@ -153,7 +157,7 @@
 
   </section>
 
-  <section class="apartments-villas">
+  <section class="apartments-villas container">
 
     <div class="apartments-villas__picture">
       <img src="img/jpg/villas768.jpg" width="135" height="90" alt="Вилла Diablo"/>
@@ -177,7 +181,7 @@
 
 </main>
 
-<footer class="page-footer">
+<footer class="page-footer container">
   <h6 class="page-footer__hashtag">#VISITSEDONA</h6>
   <section class="social-links">
     <a class="social-links--twitter" href=""><label class="visually-hidden">Twitter</label></a>
