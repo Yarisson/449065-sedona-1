@@ -29,6 +29,9 @@ a {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+  width: 138px;
+  height: 70px;
+  max-width: 100%;
 }
 
 .main-nav {
@@ -141,17 +144,40 @@ a:focus {
   margin: 0;
   padding: 0;
   width: 1200px;
-
 }
 
-.main-photo {
+.main-promo {
   width: 1200px;
-  height: 773px;
+  height: 506px;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  background-image: url("../img/png/background_main.png");
-  background-size: 1200px 773px;
+  background-image: url("../img/png/promo.png");
+  background-size: 1200px 506px;
   background-repeat: no-repeat;
+}
+
+.main-promo img {
+  max-width: 100%;
+}
+
+.main-promo__welcome {
+  text-align: center;
+  margin-top: 78px;
+}
+
+.main-promo__gorgeous {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.main-promo__sedona {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.main-promo__canyon {
+  text-align: center;
 }
 
 .main-head {
@@ -163,11 +189,7 @@ a:focus {
   align-items: center;
 }
 
-.main-reason {
-  margin: 0;
-  padding: 0;
 
-}
 
 .container-town {
   display: flex;
@@ -176,6 +198,18 @@ a:focus {
   align-items: center;
   margin-top: 0;
   margin-bottom: 60px;
+}
+
+.container-town__photo {
+  width: 800px;
+  height: 256px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container-town__photo img {
+  max-width: 100%;
 }
 
 .tourist-container {
@@ -191,6 +225,18 @@ a:focus {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 48px;
+}
+
+.container-bridge__photo {
+  width: 800px;
+  height: 256px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container-bridge__photo img {
+  max-width: 100%;
 }
 
 .main-reason-decoration {
@@ -311,8 +357,6 @@ a:focus {
 }
 
 .hotel-interest {
-  display: flex;
-  flex-direction: column;
   margin-top: 0;
   margin-bottom: 35px;
   text-align: center;
@@ -347,17 +391,6 @@ a:focus {
   background-repeat: repeat;
 }
 
-.hotel-interest__caption {
-  text-align: center;
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
-  font-style: normal;
-  font-weight: bold;
-  background-color: #766357;
-  margin: 0;
-}
-
 .hotel-interest__button {
   width: 590px;
   padding-top: 35px;
@@ -367,6 +400,12 @@ a:focus {
   margin-right: auto;
   margin-bottom: 0;
   background-color: #766357;
+  text-align: center;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
