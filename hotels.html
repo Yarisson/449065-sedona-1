@@ -20,7 +20,7 @@
     </ul>
 
     <a href="index.html" class="page-header__logo">
-<img src="img/png/logo_header.png" alt="логотип"/>
+      <img src="img/png/logo_header.png" alt="логотип"/>
     </a>
 
     <ul class="main-nav__list_right">
@@ -40,20 +40,58 @@
 
       <legend>Инфраструктура:</legend>
 
-      <p><label for="pool">
-        <input type="checkbox" id="pool" name="infrastructure_pool" placeholder="Бассейн" checked>
+      <p><input class="hotels-checkbox" type="checkbox" id="pool" name="infrastructure_pool" placeholder="Бассейн"
+                checked>
+        <label for="pool">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          Бассейн</label>
+      </p>
 
-        Бассейн</label></p>
+      <p><input class="hotels-checkbox" type="checkbox" id="parking" name="infrastructure_parking"
+                placeholder="Парковка">
+        <label for="parking">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          Парковка
+        </label></p>
 
-      <p><label for="parking">
-        <input type="checkbox" id="parking" name="infrastructure_parking" placeholder="Парковка">
-        Парковка
-      </label></p>
-
-      <p><label for="wi-fi">
-        <input type="checkbox" id="wi-fi" name="infrastructure_wifi" placeholder="Вай-Фай">
-        wi-fi
-      </label></p>
+      <p><input class="hotels-checkbox" type="checkbox" id="wi-fi" name="infrastructure_wifi" placeholder="Вай-Фай">
+        <label for="wi-fi">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          wi-fi
+        </label></p>
 
     </fieldset>
 
@@ -61,20 +99,57 @@
 
       <legend>Тип жилья:</legend>
 
-      <p><label for="hotel">
-        <input type="checkbox" id="hotel" name="type_hotel" placeholder="hotel" checked>
+      <p><input class="hotels-checkbox" type="checkbox" id="hotel" name="type_hotel" placeholder="hotel" checked>
+        <label for="hotel">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
 
-        Гостиница</label></p>
+          Гостиница</label></p>
 
-      <p><label for="motel">
-        <input type="checkbox" id="motel" name="type_motel" placeholder="Мотель" checked>
-        Мотель
-      </label></p>
+      <p><input class="hotels-checkbox" type="checkbox" id="motel" name="type_motel" placeholder="Мотель" checked>
+        <label for="motel">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          Мотель
+        </label></p>
 
-      <p><label for="apartments">
-        <input type="checkbox" id="apartments" name="type_apartments" placeholder="apartments" checked>
-        Апартамены
-      </label></p>
+      <p><input class="hotels-checkbox" type="checkbox" id="apartments" name="type_apartments" placeholder="apartments"
+                checked>
+        <label for="apartments">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-checked" width="27"
+               height="23" viewBox="0 0 27 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hotels-checkbox-svg hotels-checkbox-svg-unchecked" width="23"
+               height="23" viewBox="0 0 23 23">
+            <path class="svg-fill" fill="#FFFFFF"
+                  d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+          Апартамены
+        </label></p>
 
     </fieldset>
 
@@ -103,30 +178,30 @@
 
   </form>
 
-    <div class="hotels-list hotels-find container">
-      <div class="hotels-find__found">
-        <h1 class="hotels-caption__main">Найдено: 3</h1>
-      </div>
-
-
-      <div class="hotels-sorting hotels-sorting__sorting">Сортировка:</div>
-      <a href="#" class="hotels-sorting hotels-sorting__price">По цене</a>
-      <a href="#" class="hotels-sorting hotels-sorting__type">По типу</a>
-      <a href="#" class="hotels-sorting hotels-sorting__rating">По рейтингу</a>
-      <a href="#" class="hotels-sorting hotels-sorting__up">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-          <path class="arrow-up" fill="#c9c9c9" d="M5.5 0L0 10h11z"/>
-        </svg>
-      </a>
-      <a href="#" class="hotels-sorting hotels-sorting__down">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-          <path class="arrow-down" fill="#c9c9c9" d="M5.5 10L0 0h11"/>
-        </svg>
-      </a>
+  <div class="hotels-list hotels-find">
+    <div class="hotels-find__found">
+      <h1 class="hotels-caption__main">Найдено: 3</h1>
     </div>
 
 
-  <section class="hotel-amara container">
+    <div class="hotels-sorting hotels-sorting__sorting">Сортировка:</div>
+    <a href="#" class="hotels-sorting hotels-sorting__price">По цене</a>
+    <a href="#" class="hotels-sorting hotels-sorting__type">По типу</a>
+    <a href="#" class="hotels-sorting hotels-sorting__rating">По рейтингу</a>
+    <a href="#" class="hotels-sorting hotels-sorting-arrow hotels-sorting-arrow__up">
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path class="hotels-sorting-arrow-up--active" fill="#c9c9c9" d="M5.5 0L0 10h11z"/>
+      </svg>
+    </a>
+    <a href="#" class="hotels-sorting hotels-sorting-arrow hotels-sorting-arrow__down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path class="hotels-sorting-arrow-down--active" fill="#c9c9c9" d="M5.5 10L0 0h11"/>
+      </svg>
+    </a>
+  </div>
+
+
+  <article class="hotel-amara">
 
     <div class="hotel-amara__picture">
       <img src="img/jpg/amara768.jpg" width="135" height="90" alt="отель Amara"/>
@@ -149,9 +224,9 @@
       <p>Рейтинг:8,5</p>
     </div>
 
-  </section>
+  </article>
 
-  <section class="motel-desert container">
+  <article class="motel-desert">
 
     <div class="motel-desert__picture">
       <img src="img/jpg/desert768.jpg" width="135" height="90" alt="мотель Desert"/>
@@ -173,9 +248,9 @@
       <p>Рейтинг:8,9</p>
     </div>
 
-  </section>
+  </article>
 
-  <section class="apartments-villas container">
+  <article class="apartments-villas">
 
     <div class="apartments-villas__picture">
       <img src="img/jpg/villas768.jpg" width="135" height="90" alt="Вилла Diablo"/>
@@ -196,7 +271,7 @@
       <p>Рейтинг:9,2</p>
     </div>
 
-  </section>
+  </article>
 
 </main>
 
