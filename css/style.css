@@ -137,10 +137,25 @@ a:focus {
   background-color: #81b3d2;
 }
 
+.main-reason-decoration__color p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
+}
+
+.main-promo__low {
+  overflow: hidden;
+  background-position: 0 bottom;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/png/promo_low.png");
+  background-size: 1200px 57px;
+  background-repeat: no-repeat;
 }
 
 .main-promo {
@@ -149,7 +164,7 @@ a:focus {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-image: url("../img/png/promo.png");
+  background-image: url("../img/png/background_main.png");
   background-size: 1200px 506px;
   background-repeat: no-repeat;
 }
@@ -215,6 +230,11 @@ a:focus {
   margin-bottom: 70px;
 }
 
+.tourist-container p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .container-bridge {
   display: flex;
   flex-direction: row;
@@ -258,6 +278,11 @@ a:focus {
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 28px;
+}
+
+.main-reason__transparent p {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .map {
@@ -534,18 +559,21 @@ a:focus {
 }
 
 .hotel-search__checkin input {
+  box-sizing: border-box;
   border: none;
   background: none;
   outline: none;
 }
 
 .hotel-search__checkout input {
+  box-sizing: border-box;
   border: none;
   background: none;
   outline: none;
 }
 
 .hotel-search__guest input {
+  box-sizing: border-box;
   border: none;
   background: none;
   outline: none;
@@ -1020,16 +1048,17 @@ a:focus {
 }
 
 .input-price {
+  box-sizing: border-box;
   width: 50px;
   margin: 0;
   font-size: 14px;
   line-height: 38px;
+  vertical-align: 1px;
   color: #ffffff;
   background-color: transparent;
   border: none;
   outline: none;
   padding-left: 10px;
-
 }
 
 .page-footer__hashtag {
