@@ -911,6 +911,7 @@ padding-top: 6px;
 }
 
 .hotels-button__more {
+	width: 110px;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
@@ -938,6 +939,7 @@ padding-top: 6px;
 }
 
 .hotels-button__booking {
+	width: 140px;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
