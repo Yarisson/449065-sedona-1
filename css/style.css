@@ -8,8 +8,12 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   color: #000000;
+  background-color: #f2f2f2;
+  
 }
-
+.input-price:focus {
+  border: none;
+}
 a {
   text-decoration: none;
   color: black;
@@ -29,17 +33,20 @@ a {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
-  width: 140px;
+  width: 240px;
   height: 56px;
   max-width: 100%;
   position: relative;
 }
 
+.page-header__logo a {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+}
+
 .page-header__logo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  vertical-align: top;
 }
 
 .main-nav {
@@ -52,7 +59,7 @@ a {
 
 .main-nav__list_left {
   display: flex;
-  width: 530px;
+  width: 480px;
   margin: 0;
   padding: 0;
   flex-direction: row;
@@ -68,7 +75,7 @@ a {
 
 .main-nav__list_right {
   display: flex;
-  width: 530px;
+  width: 480px;
   margin: 0;
   padding: 0;
   flex-direction: row-reverse;
@@ -129,8 +136,9 @@ a:focus {
   width: 400px;
   margin: 0;
   padding: 0;
-  padding-top: 48px;
-  height: 208px;
+  padding-top: 28px;
+  padding-bottom: 35px;
+  height: 193px;
   align-self: center;
   text-align: center;
   color: #ffffff;
@@ -146,27 +154,17 @@ a:focus {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
-}
-
-.main-promo__low {
-  overflow: hidden;
-  background-position: 0 bottom;
-  width: 1200px;
-  height: 57px;
-  background-image: url("../img/png/promo_low.png");
-  background-size: 1200px 57px;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .main-promo {
-  width: 1200px;
-  height: 506px;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-image: url("../img/png/background_main.png");
-  background-size: 1200px 506px;
-  background-repeat: no-repeat;
+ width: 1200px;
+    height: 510px;
+    background-image: url(../img/png/shape.png), url(../img/jpg/background-photo.jpg);
+    background-position: center bottom, center -50px;
+    background-repeat: no-repeat, no-repeat;
+	background-size: 100% 57px, cover; 
+  
 }
 
 .main-promo img {
@@ -175,12 +173,14 @@ a:focus {
 
 .main-promo__welcome {
   text-align: center;
-  margin-top: 78px;
+  margin-top: 0;
+  padding-top: 78px;
 }
 
 .main-promo__gorgeous {
   text-align: center;
   margin-bottom: 45px;
+  padding-top: 5px;
 }
 
 .main-promo__sedona {
@@ -264,7 +264,7 @@ a:focus {
 
 .container-decoration {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 82px;
   display: flex;
   width: 1200px;
   flex-direction: row;
@@ -408,7 +408,7 @@ a:focus {
 
 .reason-caption__second {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
@@ -416,7 +416,7 @@ a:focus {
 
 .decoration-caption__second {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   font-style: normal;
   font-weight: bold;
   color: #000000;
@@ -469,16 +469,22 @@ a:focus {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
+  border: none;
+  outline: none;
 }
 
 .hotel-interest__button:hover,
 .hotel-interest__button:focus {
   background-color: #604e43;
+  border: none;
+  outline: none;
 }
 
 .hotel-interest__button:active {
   color: #857871;
   background-color: #503e33;
+  border: none;
+  outline: none;
 }
 
 .hotel-search--calendar {
@@ -538,6 +544,14 @@ a:focus {
   font-weight: bold;
 }
 
+.main-reason__tourist-housing {
+padding-top: 4px;
+}
+
+.main-reason__tourist-food {
+padding-top: 6px;
+}
+
 .hotels-caption__main {
   font-size: 21px;
   line-height: 26px;
@@ -592,6 +606,8 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #81b3d2;
+  border: none;
+  outline: none;
 }
 
 .form-container {
@@ -883,11 +899,15 @@ a:focus {
 .hotel-search__button:focus {
   color: #ffffff;
   background-color: #669EBF;
+  border: none;
+  outline: none;
 }
 
 .hotel-search__button:active {
   color: #8BB5CB;
   background-color: #5596BE;
+  border: none;
+  outline: none;
 }
 
 .hotels-button__more {
@@ -898,17 +918,23 @@ a:focus {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  border: none;
+  outline: none;
 }
 
 .hotels-button__more:hover,
 .hotels-button__more:focus {
   color: #ffffff;
   background-color: #669EBF;
+   border: none;
+  outline: none;
 }
 
 .hotels-button__more:active {
   color: #8BB5CB;
   background-color: #5596BE;
+  border: none;
+  outline: none;
 }
 
 .hotels-button__booking {
@@ -919,17 +945,23 @@ a:focus {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766357;
+  border: none;
+  outline: none;
 }
 
 .hotels-button__booking:hover,
 .hotels-button__booking:focus {
   color: #ffffff;
   background-color: #604e43;
+   border: none;
+  outline: none;
 }
 
 .hotels-button__booking:active {
   color: #948B84;
   background-color: #503e33;
+   border: none;
+  outline: none;
 }
 
 .page-footer {
@@ -1014,20 +1046,14 @@ a:focus {
   line-height: 21px;
 }
 
-.form-hotels__infrastructure input:focus,
-.form-hotels__type input:focus,
-.form-hotels__price input:focus {
-  border: 1px solid #ffffff;
-}
-
 .form-hotels__infrastructure input:disabled,
-.form-hotels__type input:disabled,
-.form-hotels__price input:disabled {
+.form-hotels__type input:disabled {
   border: 1px solid #666A6B;
 }
 
 .form-hotels__button {
   display: block;
+  width: 64px;
   margin: 0 auto;
   padding: 5px 35px;
   font-size: 14px;
@@ -1041,7 +1067,7 @@ a:focus {
   cursor: pointer;
 }
 
-.form-hotels__button:focus {
+.form-hotels__button:hover {
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -1325,4 +1351,8 @@ a .hotels-caption__second:active {
 
 .main-hotels {
   margin-bottom: 30px;
+  background-color: #fefefe;
 }
+
+.page-footer-hotels {
+	background-color: #fefefe;
