@@ -1009,7 +1009,6 @@ line-height: 21px;
   justify-content: center;
   align-items: center;
   width: 1200px;
-  margin-top: 15px;
   margin-bottom: 0;
   color: #000000;
   background-color: #ffffff;
@@ -1400,7 +1399,9 @@ footer {
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
-
+main {
+	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);	
+}
 
 .page-footer-hotels {
   background-color: #fefefe;
