@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" type="text/css" rel="stylesheet">
-  <link href="css/style-min.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -166,7 +166,7 @@
 
     <div class="map">
       <div class="hotel-search container">
-        <form class="hotel-search__body">
+        <form class="hotel-search__body" action="https://echo.htmlacademy.ru" method="post">
           <div class="hotel-search__checkin"><label for="check-in-date">Дата заезда:</label>
             <input type="text" id="check-in-date" name="check-in-date" value="24 апреля 2017">
             <button class="hotel-search--calendar">
@@ -214,7 +214,7 @@
             </div>
 
           </div>
-          <button class="hotel-search__button">Найти</button>
+          <button class="hotel-search__button" type="submit">Найти</button>
         </form>
       </div>
     </div>
@@ -258,5 +258,55 @@
     </a>
   </div>
 </footer>
+
+<script>
+var link = document.querySelector(".hotel-interest__button");
+
+var popup = document.querySelector(".hotel-search__body");
+var close = popup.querySelector(".hotel-interest__button");
+
+var form = popup.querySelector("form");
+
+   var checkin = popup.querySelector("[name=check-in-date]");
+  var checkout = popup.querySelector("[name=check-out-date]");
+     var adult = popup.querySelector("[name=adult]");
+  var children = popup.querySelector("[name=children]");
+
+
+  link.addEventListener("click", function (evt) {
+evt.preventDefault();
+popup.classList.add("modal-show");
+  });
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+
+	  form.addEventListener("submit", function (evt) {
+    if (!checkin.value || !checkout.value || !adult.value || !children.value) {
+      evt.preventDefault();
+	        popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+	  }
+	      else {
+      localStorage.setItem("checkin", checkin.value);
+    localStorage.setItem("checkout", checkout.value);
+	localStorage.setItem("adult", adult.value);
+	localStorage.setItem("children", children.value);
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+		popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+</script>
+
 </body>
 </html>
