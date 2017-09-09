@@ -1,5 +1,7 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
+
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -8,7 +10,13 @@ gulp.task('browser-sync', function() {
         }
     });
 
-    gulp.watch("./**/*.html").on('change', browserSync.reload);
-    gulp.watch("./**/*.css").on('change', browserSync.reload);
-    gulp.watch("./**/*.js").on('change', browserSync.reload);	
+    gulp.task('reload', function () {
+    	browserSync.reload();
+   	 	done();
+	});
+
+
+    gulp.watch("./css/*.css").on("change", reload);
+    gulp.watch("./*.html").on("change", reload);
+    gulp.watch("./js/*.js").on('change', reload);	
 });
