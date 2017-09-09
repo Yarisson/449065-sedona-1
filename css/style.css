@@ -323,7 +323,9 @@ a:focus {
 .hotel-search__checkin input {
   flex: 1 1 auto;
   height: 38px;
+    box-sizing: border-box;
   padding: 0 40px 0 11px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -358,7 +360,9 @@ a:focus {
 .hotel-search__checkout input {
   flex: 1 1 auto;
   height: 38px;
+    box-sizing: border-box;
   padding: 0 40px 0 11px;
+    font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -375,6 +379,23 @@ a:focus {
   border: 2px solid #e5e5e5;
 }
 
+.hotel-search__button {
+  width: 460px;
+  margin-top: 5px;
+  margin-bottom: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+}
+
 .hotel-search__guest {
   position: relative;
   display: flex;
@@ -387,6 +408,18 @@ a:focus {
 .hotel-search__guest label {
   margin-right: 15px;
   margin-left: 0;
+}
+
+.hotel-search__guest input {
+  box-sizing: border-box;
+  margin-left: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .main-head__caption {
@@ -572,50 +605,6 @@ a:focus {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-}
-
-.hotel-search__checkin input {
-  box-sizing: border-box;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: normal;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.hotel-search__checkout input {
-  box-sizing: border-box;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: normal;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.hotel-search__guest input {
-  box-sizing: border-box;
-  margin-left: 20px;
-  text-align: left;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.hotel-search__button {
-  width: 460px;
-  margin-top: 5px;
-  margin-bottom: 55px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-style: normal;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: none;
-  outline: none;
 }
 
 .form-container {
